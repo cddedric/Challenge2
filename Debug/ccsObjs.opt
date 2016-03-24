@@ -1,0 +1,1 @@
+"./HAL_I2C.obj" "./HAL_OPT3001.obj" "./main.obj" "./startup_msp432p401r_ccs.obj" "./system_msp432p401r.obj" "../msp432p401r.cmd" "../msp432p4xx_driverlib.lib" -l"libc.a" 
