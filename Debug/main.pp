@@ -50,6 +50,8 @@ main.obj: C:/ECE461/Challenge2/driverlib/MSP432P4xx/uart.h
 main.obj: C:/ECE461/Challenge2/driverlib/MSP432P4xx/wdt_a.h
 main.obj: ../HAL_I2C.h
 main.obj: ../HAL_OPT3001.h
+main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.7/include/stdio.h
+main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.7/include/stdarg.h
 
 ../main.c: 
 C:/ti/ccsv6/ccs_base/arm/include/msp432.h: 
@@ -101,3 +103,5 @@ C:/ECE461/Challenge2/driverlib/MSP432P4xx/uart.h:
 C:/ECE461/Challenge2/driverlib/MSP432P4xx/wdt_a.h: 
 ../HAL_I2C.h: 
 ../HAL_OPT3001.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.7/include/stdio.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.7/include/stdarg.h: 

@@ -2,6 +2,7 @@
 #include "driverlib.h"
 #include "HAL_I2C.h"
 #include "HAL_OPT3001.h"
+#include <stdio.h>
 
 
 void delay(void);
@@ -28,11 +29,12 @@ int main(void)
 	MAP_CS_setDCOCenteredFrequency(CS_DCO_FREQUENCY_48);
 	initPorts();
 	buzzerInit();
-/*
+
     Init_I2C_GPIO();
     I2C_init();
     OPT3001_init();
-*/
+
+    __delay_cycles(100000);
 
 	while(1){
 		//1 check lux for above level
@@ -44,7 +46,7 @@ int main(void)
 //		else //check other things... fire is far more important
 
 
-	//	lux = OPT3001_getLux();
+		lux = OPT3001_getLux();
 		//if (lux>)
 
 		if (!(P1IN & BIT1)){		//doorbell
@@ -86,9 +88,8 @@ int main(void)
 			}
 		}
 
-//		if (burlgaryState==;0)
 
-		if (!readable){ //incrementer for debounce
+		if (!(readable==0)){ //incrementer for debounce
 			i++;
 			if(i>=240000){
 				i=0;
